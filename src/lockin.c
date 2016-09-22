@@ -106,6 +106,10 @@ int lockin_exit(void)
  */
 int lockin_update(rp_app_params_t *params)
 {
+/*    fprintf(stderr, "phase %d.\n", (int)params[LOCKIN_PHASE].value);
+    fprintf(stderr, "gain %d.\n", (int)params[LOCKIN_GAIN].value);
+    fprintf(stderr, "PID1 ena %d.\n", (int)params[LOCKIN_PID_1_ENABLE].value);
+    fprintf(stderr, "PID2 ena %d.\n", (int)params[LOCKIN_PID_2_ENABLE].value);*/
 
     lockin_param_t lockin = { 0 };
     uint32_t lockin_config = 0;
