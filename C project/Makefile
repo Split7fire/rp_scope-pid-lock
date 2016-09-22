@@ -5,6 +5,7 @@
 #
 
 APP=$(notdir $(CURDIR:%/=%))
+red_pitaya_ip = 192.168.55.249
 
 # Versioning system
 BUILD_NUMBER ?= 0
@@ -31,6 +32,9 @@ zip: $(CONTROLLERHF)
 	sed -i target/$(APP)/info/info.json -e 's/BUILD_NUMBER/$(BUILD_NUMBER)/'
 	cd target; zip -r $(INSTALL_DIR)/$(APP)-$(VER)-$(BUILD_NUMBER)-$(REVISION).zip *
 	$(RM) target -rf
+
+build_upload: $(CONTROLLERHF)
+				scp controllerhf.so root@$(red_pitaya_ip):/opt/redpitaya/www/apps/rp_scope-pid-lock
 
 clean:
 	$(MAKE) -C src clean
