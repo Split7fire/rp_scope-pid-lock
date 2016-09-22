@@ -1,0 +1,6 @@
+{
+    "name": "PID & Lock-in & Oscilloscope",
+    "version": "0.93-BUILD_NUMBER",
+    "revision": "REVISION",
+    "description": "Test of lock-in app"
+}
