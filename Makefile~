@@ -3,7 +3,7 @@
 #
 # Red Pitaya specific application Makefile.
 #
-# TEST
+
 APP=$(notdir $(CURDIR:%/=%))
 
 # Versioning system
