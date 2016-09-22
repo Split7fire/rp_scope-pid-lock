@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Sep 22 10:56:14 2016
+# Process ID: 4955
+# Log file: /home/st/RedPitaya/RedPitaya/fpga/project/redpitaya.runs/impl_1/red_pitaya_top.vdi
+# Journal file: /home/st/RedPitaya/RedPitaya/fpga/project/redpitaya.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source red_pitaya_top.tcl -notrace
