@@ -321,7 +321,9 @@ static rp_app_params_t rp_main_params[PARAMS_NUM+1] = {
         "lockin_pid2_ki",  0, 1, 0, -8192, 8191 },
     { /* */
         "lockin_pid2_kd",  0, 1, 0, -8192, 8191 },
-        
+	{ /* */
+	    "lockin_output",  0, 1, 0, -8192, 8191 },
+
     { /* Must be last! */
         NULL, 0.0, -1, -1, 0.0, 0.0 }     
 };
