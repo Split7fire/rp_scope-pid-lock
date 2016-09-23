@@ -34,7 +34,7 @@ zip: $(CONTROLLERHF)
 	$(RM) target -rf
 
 build_upload: $(CONTROLLERHF)
-				scp controllerhf.so root@$(red_pitaya_ip):/opt/redpitaya/www/apps/rp_scope-pid-lock
+				scp controllerhf.so root@$(red_pitaya_ip):/opt/redpitaya/www/apps/scope+pid+lock/
 
 clean:
 	$(MAKE) -C src clean
